@@ -1,0 +1,19 @@
+{% block html %}
+<!doctype html>
+<html {% block html_tag_attributes %}{% endblock %}>
+    <head>
+        {% block head %}
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="icon" href="favicon.ico"> -->
+        <title>Django + Vue CLI + Webpack demo</title>
+        {% endblock %}
+    </head>
+    <body {% block body_tag_attributes %}{% endblock %}>
+        {% block body %}
+            {% block content %}{% endblock %}
+        {% endblock %}
+    </body>
+</html>
+{% endblock %}
